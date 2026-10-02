@@ -8,3 +8,20 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Terraform local data and state
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Local Terraform variable values
+*.tfvars
+*.tfvars.json
+
+# Terraform overrides and crash logs
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+crash.log
+crash.*.log
