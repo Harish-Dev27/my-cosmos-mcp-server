@@ -72,7 +72,7 @@ jobs:
           az containerapp ingress update \
             --name "$AZURE_CONTAINER_APP" \
             --resource-group "$AZURE_RESOURCE_GROUP" \
-            --target-port 8000
+            --target-port 8080
 
           az containerapp update \
             --name "$AZURE_CONTAINER_APP" \

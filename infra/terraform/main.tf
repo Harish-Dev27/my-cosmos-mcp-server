@@ -72,7 +72,7 @@ resource "azurerm_container_app" "project" {
 
   ingress {
     external_enabled = true
-    target_port      = 8000
+    target_port      = 8080
     transport        = "auto"
 
     cors {
