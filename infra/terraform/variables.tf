@@ -18,6 +18,24 @@ variable "base_location" {
   type        = string
 }
 
+variable "container_app_environment_name" {
+  description = "Name of the Azure Container Apps environment."
+  type        = string
+  default     = "cae-cosmos-mcp"
+}
+
+variable "container_app_name" {
+  description = "Name of the Azure Container App."
+  type        = string
+  default     = "ca-cosmos-mcp"
+}
+
+variable "container_app_env_location" {
+  description = "Location of the Azure Container Apps environment."
+  type        = string
+  default     = "southindia"
+}
+
 variable "tags" {
   description = "Tags applied to project resources."
   type        = map(string)
